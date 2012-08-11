@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    <EditText
+        android:id="@+building_list/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:hint="@string/auto"
+        android:inputType="text"
+        android:maxLines="1" >
+
+        <requestFocus android:layout_width="wrap_content" />
+
+    </EditText>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ff000000"
+        android:drawSelectorOnTop="true"
+        android:layout_weight="1" 
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"/>
+    <Button
+        android:id="@+id/check_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ff339900"
+        android:text="@string/check_in"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/blank3"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#ff000000" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/message_share_button"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#ff339900"
+        android:text="@string/message_share"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:layout_weight="1" />
+
+   <TextView
+        	android:id="@+id/blank2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="1dp">		
+		</TextView> 
+		
+   <!-- future enhancement
+   <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="15dp" /> -->
+    <Button
+        android:id="@+id/message_read_button"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="#ff339900"
+        android:text="@string/message_read"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>
+</LinearLayout>
